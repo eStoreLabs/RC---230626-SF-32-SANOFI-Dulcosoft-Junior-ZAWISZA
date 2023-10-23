@@ -362,7 +362,7 @@ $fw-black: 900;
     &__title {
       font-family: $title;
       font-size: $fs-section-title;
-      color: $main-color--2;
+      color: #FFF;
       font-weight: $fw-black;
       text-transform: uppercase;
       line-height: 1;
@@ -372,10 +372,11 @@ $fw-black: 900;
 
       &--italic {
         font-style: italic;
+        font-size: clamp(0.9375rem, 0.4018rem + 2.6786vw, 2.0625rem);
       }
 
       &--middle {
-        font-size: calc(3 * $fs-section-title);
+        font-size: calc(2.3 * $fs-section-title);
         color: $main-color;
       }
     }
@@ -383,7 +384,7 @@ $fw-black: 900;
     &__mobile {
       display: block;
 
-      @media (min-width: 576px) {
+      @media (min-width: 992px) {
         display: none;
       }
     }
@@ -391,9 +392,8 @@ $fw-black: 900;
     &__desktop {
       display: none;
 
-      @media (min-width: 576px) {
+      @media (min-width: 992px) {
         display: block;
-        min-height: 234px;
         object-fit: cover;
         object-position: 72%;
       }

@@ -298,7 +298,7 @@
 #es-rc #es-rc-content .es-relief__title {
   font-family: "Montserrat";
   font-size: clamp(22px, 12.88px + 2.532vw, 38px);
-  color: #00604d;
+  color: #FFF;
   font-weight: 900;
   text-transform: uppercase;
   line-height: 1;
@@ -308,15 +308,16 @@
 }
 #es-rc #es-rc-content .es-relief__title--italic {
   font-style: italic;
+  font-size: clamp(0.9375rem, 0.4018rem + 2.6786vw, 2.0625rem);
 }
 #es-rc #es-rc-content .es-relief__title--middle {
-  font-size: calc(3 * clamp(22px, 12.88px + 2.532vw, 38px));
+  font-size: calc(2.3 * clamp(22px, 12.88px + 2.532vw, 38px));
   color: #a1bd39;
 }
 #es-rc #es-rc-content .es-relief__mobile {
   display: block;
 }
-@media (min-width: 576px) {
+@media (min-width: 992px) {
   #es-rc #es-rc-content .es-relief__mobile {
     display: none;
   }
@@ -324,10 +325,9 @@
 #es-rc #es-rc-content .es-relief__desktop {
   display: none;
 }
-@media (min-width: 576px) {
+@media (min-width: 992px) {
   #es-rc #es-rc-content .es-relief__desktop {
     display: block;
-    min-height: 234px;
     -o-object-fit: cover;
        object-fit: cover;
     -o-object-position: 72%;
