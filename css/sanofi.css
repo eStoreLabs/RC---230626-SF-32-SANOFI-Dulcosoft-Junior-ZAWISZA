@@ -213,7 +213,7 @@
   font-weight: 700;
   text-transform: uppercase;
   color: #fff;
-  width: 95%;
+  width: 86%;
   margin: auto;
 }
 #es-rc #es-rc-content .es-description__subtitle {
@@ -225,6 +225,12 @@
   font-family: "Montserrat";
   line-height: 1.3;
   margin: 0 auto 10px;
+}
+@media (min-width: 992px) {
+  #es-rc #es-rc-content .es-description__subtitle {
+    max-width: 90%;
+    margin-inline: auto;
+  }
 }
 #es-rc #es-rc-content .es-description__box > img {
   width: 65%;
@@ -238,11 +244,21 @@
   text-align: left;
   list-style-type: none;
   padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  max-width: 52%;
+  margin-inline: auto;
+  margin-bottom: 0;
 }
-#es-rc #es-rc-content .es-description__item {
+#es-rc #es-rc-content .es-description__li-text {
   color: #a1bd39;
   font-weight: 700;
-  padding-top: 5px;
+  margin: 0;
+}
+#es-rc #es-rc-content .es-description__item {
+  display: flex;
+  align-items: start;
 }
 #es-rc #es-rc-content .es-description__bullet {
   margin-right: 5px;
@@ -266,11 +282,17 @@
   color: #fff;
   font-weight: 300;
   font-size: clamp(12px, 9.722px + 0.6329vw, 16px);
+  max-width: 70%;
+  margin: auto;
+}
+@media (min-width: 768px) {
+  #es-rc #es-rc-content .es-description__text1 {
+    max-width: 86%;
+  }
 }
 @media (min-width: 992px) {
   #es-rc #es-rc-content .es-description__text1 {
-    max-width: 93%;
-    margin: auto;
+    max-width: 75%;
   }
 }
 #es-rc #es-rc-content .es-relief__title {
