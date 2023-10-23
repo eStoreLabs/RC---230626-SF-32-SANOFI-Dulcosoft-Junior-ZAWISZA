@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.cdnfonts.com/css/amazon-ember");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @keyframes slidedown {
@@ -82,28 +83,12 @@
 }
 #es-rc #es-rc-content .es-kv__packshotCtn {
   position: absolute;
-  transform: translate(-50%);
-  left: 50%;
   bottom: 0;
-  display: flex;
-  align-items: flex-end;
-  width: 80%;
-  padding-bottom: 14px;
-  gap: 2%;
-}
-@media (min-width: 576px) {
-  #es-rc #es-rc-content .es-kv__packshotCtn {
-    width: 94%;
-  }
-}
-@media (min-width: 768px) {
-  #es-rc #es-rc-content .es-kv__packshotCtn {
-    gap: 5%;
-  }
+  padding-block: 14px;
+  padding-inline: 20px;
 }
 @media (min-width: 992px) {
   #es-rc #es-rc-content .es-kv__packshotCtn {
-    width: 90%;
     margin-bottom: 1.5rem;
   }
 }
@@ -127,7 +112,6 @@
   font-family: "Montserrat";
   font-weight: 900;
   color: #fff;
-  padding: 0 10px;
   text-transform: uppercase;
   line-height: 1;
   font-size: clamp(2.1rem, 1.1601rem + 4.1772vw, 3.75rem);
@@ -141,7 +125,9 @@
   animation: slideleft 1s ease forwards;
   bottom: 0;
   left: 5%;
-  height: 250px;
+  height: 200px;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
 }
 @media (min-width: 768px) {
   #es-rc #es-rc-content .es-kv__packshot {
@@ -263,7 +249,7 @@
 #es-rc #es-rc-content .es-description__list {
   text-align: left;
   list-style-type: none;
-  padding-left: 18%;
+  padding-left: 0;
 }
 #es-rc #es-rc-content .es-description__item {
   color: #a1bd39;
@@ -613,6 +599,7 @@
   color: #00604d;
   font-weight: 700;
   max-width: 360px;
+  text-wrap: balance;
   margin: 0 auto;
 }
 @media (min-width: 992px) {

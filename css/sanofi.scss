@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.cdnfonts.com/css/amazon-ember');
 
 @keyframes slidedown {
@@ -120,25 +121,21 @@ $fw-black: 900;
 
     &__packshotCtn {
       position: absolute;
-      transform: translate(-50%);
-      left: 50%;
+      
       bottom: 0;
-      display: flex;
-      align-items: flex-end;
-      width: 80%;
-      padding-bottom: 14px;
-      gap: 2%;
+      padding-block: 14px;
+      padding-inline: 20px;
 
       @media (min-width: 576px) {
-        width: 94%;
+        //width: 94%;
       }
 
       @media (min-width: 768px) {
         //width: 85%;
-        gap: 5%;
+       // gap: 5%;
       }
       @media (min-width: 992px) {
-        width: 90%;
+        //width: 90%;
         margin-bottom: 1.5rem;
       }
     }
@@ -163,18 +160,13 @@ $fw-black: 900;
       font-family: $title;
       font-weight: $fw-black;
       color: $text;
-      padding: 0 10px;
       text-transform: uppercase;
       line-height: 1;
-      //font-size: clamp(2.125rem, 1.627rem + 2.215vw, 3rem);
-      //font-size: clamp(2.9rem, 2.4158rem + 2.1519vw, 3.75rem);
       font-size: clamp(2.1rem, 1.1601rem + 4.1772vw, 3.75rem);
 
 
       &--span {
         display: block;
-        //font-size: calc(0.8 * clamp(2.125rem, 1.627rem + 2.215vw, 3rem));
-        //font-size: clamp(1.9rem, 1.2734rem + 2.7848vw, 3rem);
         font-size: clamp(1.375rem, 0.428rem + 4.2089vw, 3.0375rem);
         margin-bottom: 8px;
       }
@@ -184,10 +176,9 @@ $fw-black: 900;
       animation: slideleft 1s ease forwards;
       bottom: 0;
       left: 5%;
-      height: 250px;
-      // @media (min-width: 420px) {
-      //   height: 275px;
-      // }
+      height: 200px;
+      margin-left: 1rem;
+      margin-top: 0.5rem;
 
       @media (min-width: 768px) {
         height: 375px;
@@ -314,13 +305,14 @@ $fw-black: 900;
     &__list {
       text-align: left;
       list-style-type: none;
-      padding-left: 18%;
+      padding-left: 0;
     }
 
     &__item {
       color: $main-color;
       font-weight: $fw-bold;
       padding-top: 5px;
+      
     }
 
     &__bullet {
@@ -703,6 +695,7 @@ $fw-black: 900;
       color: $main-color--2;
       font-weight: 700;
       max-width: 360px;
+      text-wrap: balance;
       margin: 0 auto;
       @media (min-width: 992px) {
         font-size: calc(1.2 * $fs-base);
