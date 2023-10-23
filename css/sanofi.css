@@ -73,24 +73,16 @@
 }
 #es-rc #es-rc-content .es-kv__container {
   padding: 0;
-  min-height: 350px;
-  aspect-ratio: 24/25;
-}
-@media (min-width: 420px) {
-  #es-rc #es-rc-content .es-kv__container {
-    aspect-ratio: 248/175;
-  }
 }
 #es-rc #es-rc-content .es-kv__packshotCtn {
   position: absolute;
   bottom: 0;
-  padding-block: 14px;
+  padding-block: 1.5rem;
   padding-inline: 20px;
-}
-@media (min-width: 992px) {
-  #es-rc #es-rc-content .es-kv__packshotCtn {
-    margin-bottom: 1.5rem;
-  }
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 #es-rc #es-rc-content .es-kv__mobile {
   display: block;
@@ -114,29 +106,62 @@
   color: #fff;
   text-transform: uppercase;
   line-height: 1;
-  font-size: clamp(2.1rem, 1.1601rem + 4.1772vw, 3.75rem);
+  font-size: clamp(2.1rem, 1.2845rem + 4.0774vw, 3.8125rem);
+}
+@media (min-width: 576px) {
+  #es-rc #es-rc-content .es-kv__text {
+    max-width: 80%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  #es-rc #es-rc-content .es-kv__text {
+    font-size: 35px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #es-rc #es-rc-content .es-kv__text {
+    font-size: 45px;
+    max-width: 92%;
+  }
 }
 #es-rc #es-rc-content .es-kv__text--span {
   display: block;
-  font-size: clamp(1.375rem, 0.428rem + 4.2089vw, 3.0375rem);
+  font-size: clamp(1.375rem, 0.6012rem + 3.869vw, 3rem);
   margin-bottom: 8px;
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  #es-rc #es-rc-content .es-kv__text--span {
+    font-size: 27px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #es-rc #es-rc-content .es-kv__text--span {
+    font-size: 35px;
+  }
 }
 #es-rc #es-rc-content .es-kv__packshot {
   animation: slideleft 1s ease forwards;
   bottom: 0;
-  left: 5%;
-  height: 200px;
   margin-left: 1rem;
   margin-top: 0.5rem;
+  width: 28%;
+  max-width: 174px;
+}
+@media (min-width: 576px) {
+  #es-rc #es-rc-content .es-kv__packshot {
+    width: 19%;
+    margin-left: 2rem;
+  }
 }
 @media (min-width: 768px) {
   #es-rc #es-rc-content .es-kv__packshot {
-    height: 375px;
+    width: 18%;
+    margin-left: 3rem;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   #es-rc #es-rc-content .es-kv__packshot {
-    height: 480px;
+    width: 21%;
   }
 }
 #es-rc #es-rc-content .es-kv__background {
@@ -217,7 +242,7 @@
 #es-rc #es-rc-content .es-description {
   background: rgb(4, 94, 72);
   background: linear-gradient(90deg, rgb(4, 94, 72) 22%, rgb(4, 132, 100) 40%, rgb(4, 109, 84) 67%, rgb(4, 124, 97) 95%, rgb(4, 116, 92) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#045e48",endColorstr="#04745c",GradientType=1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#045e48", endColorstr="#04745c", GradientType=1);
 }
 #es-rc #es-rc-content .es-description__text {
   font-family: "Montserrat";
@@ -334,7 +359,7 @@
 #es-rc #es-rc-content .es-dose {
   background: rgb(4, 94, 72);
   background: linear-gradient(90deg, rgb(4, 94, 72) 22%, rgb(4, 132, 100) 40%, rgb(4, 109, 84) 67%, rgb(4, 124, 97) 95%, rgb(4, 116, 92) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#045e48",endColorstr="#04745c",GradientType=1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#045e48", endColorstr="#04745c", GradientType=1);
 }
 #es-rc #es-rc-content .es-dose__grid {
   display: grid;
