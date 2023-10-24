@@ -640,6 +640,12 @@
   text-transform: uppercase;
   margin-bottom: 0;
 }
+@media (min-width: 992px) {
+  #es-rc #es-rc-content .es-articles__box {
+    display: grid;
+    grid-template-rows: 180px 125px 1fr;
+  }
+}
 #es-rc #es-rc-content .es-articles__text1 {
   font-size: clamp(12px, 9.722px + 0.6329vw, 16px);
   color: #005649;

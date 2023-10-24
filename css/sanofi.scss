@@ -741,7 +741,14 @@ $fw-black: 900;
       text-transform: uppercase;
       margin-bottom: 0;
     }
-
+    &__box {
+      @media (min-width: 992px) {
+        display: grid;
+      grid-template-rows: 180px 125px 1fr;
+      }
+      
+  
+    }
     &__text1 {
       font-size: $fs-base;
       color: $main-color--1;
@@ -764,6 +771,7 @@ $fw-black: 900;
       @media (min-width: 992px) {
         font-size: calc(1.2 * $fs-base);
       }
+
     }
 
     &__button {
