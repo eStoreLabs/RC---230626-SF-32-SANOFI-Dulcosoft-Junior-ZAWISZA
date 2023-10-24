@@ -150,7 +150,7 @@ $fw-black: 900;
       text-transform: uppercase;
       line-height: 1;
       //font-size: clamp(2.1rem, 1.1601rem + 4.1772vw, 3.75rem);
-      font-size: clamp(2.1rem, 1.2845rem + 4.0774vw, 3.8125rem);
+      font-size: clamp(1.375rem, 0.2143rem + 5.8036vw, 3.8125rem);
 
       @media (min-width: 576px) {
         max-width: 80%;
@@ -168,9 +168,9 @@ $fw-black: 900;
       &--span {
         display: block;
         //font-size: clamp(1.375rem, 0.428rem + 4.2089vw, 3.0375rem);
-        font-size: clamp(1.375rem, 0.6012rem + 3.869vw, 3rem);
+        font-size: clamp(1.25rem, 0.4167rem + 4.1667vw, 3rem);
         margin-bottom: 8px;
-
+        
         @media (min-width: 576px) and (max-width: 767px) {
           font-size: 27px;
         }
@@ -405,8 +405,18 @@ $fw-black: 900;
     font-family: $Ember;
 
     .es-features__title {
-      height: 2em;
+      height: calc(3 * 1.2em);
+      @media (min-width: 360px) and (max-width: 767px){
+        height: calc(2 * 1.2em);
+      }
+      @media (min-width: 768px) and (max-width: 991px) {
+        height: calc(3 * 1.2em);
+      }
+      @media (min-width: 992px) {
+        height: calc(2 * 1.2em);
+      }
     }
+
   }
 
   .es-dose {
@@ -583,7 +593,9 @@ $fw-black: 900;
 
     &__image {
       max-height: 170px;
-
+      &:hover {
+        cursor: pointer;
+      }
       @media (min-width: 992px) {
         max-height: 220px;
       }

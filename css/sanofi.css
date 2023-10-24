@@ -106,7 +106,7 @@
   color: #fff;
   text-transform: uppercase;
   line-height: 1;
-  font-size: clamp(2.1rem, 1.2845rem + 4.0774vw, 3.8125rem);
+  font-size: clamp(1.375rem, 0.2143rem + 5.8036vw, 3.8125rem);
 }
 @media (min-width: 576px) {
   #es-rc #es-rc-content .es-kv__text {
@@ -126,7 +126,7 @@
 }
 #es-rc #es-rc-content .es-kv__text--span {
   display: block;
-  font-size: clamp(1.375rem, 0.6012rem + 3.869vw, 3rem);
+  font-size: clamp(1.25rem, 0.4167rem + 4.1667vw, 3rem);
   margin-bottom: 8px;
 }
 @media (min-width: 576px) and (max-width: 767px) {
@@ -339,7 +339,22 @@
   font-family: "Amazon Ember", sans-serif;
 }
 #es-rc #es-rc-content .es-why .es-features__title {
-  height: 2em;
+  height: 3.6em;
+}
+@media (min-width: 360px) and (max-width: 767px) {
+  #es-rc #es-rc-content .es-why .es-features__title {
+    height: 2.4em;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #es-rc #es-rc-content .es-why .es-features__title {
+    height: 3.6em;
+  }
+}
+@media (min-width: 992px) {
+  #es-rc #es-rc-content .es-why .es-features__title {
+    height: 2.4em;
+  }
 }
 #es-rc #es-rc-content .es-dose {
   background: rgb(4, 94, 72);
@@ -495,6 +510,9 @@
 }
 #es-rc #es-rc-content .es-cross__image {
   max-height: 170px;
+}
+#es-rc #es-rc-content .es-cross__image:hover {
+  cursor: pointer;
 }
 @media (min-width: 992px) {
   #es-rc #es-rc-content .es-cross__image {
