@@ -585,10 +585,29 @@ $fw-black: 900;
       font-weight: 500;
     }
 
+    & td {
+      vertical-align: middle;
+      border: none;
+      min-width: 150px;
+      color: $text-black;
+      //font-size: 14px;
+      font-weight: 500;
+    }
+
+    & th {
+      vertical-align: middle;
+      border: none;
+      min-width: 110px;
+      color: $main-color--1;
+      //font-size: 14px;
+      font-weight: 500;
+    }
     &__head {
       font-size: calc(1.67 * $fs-base);
       font-weight: 800;
       color: $main-color--1;
+      
+      
     }
 
     &__image {
@@ -646,6 +665,10 @@ $fw-black: 900;
 
     .header-row {
       height: 80.3px;
+      & td {
+        vertical-align: top;
+      }
+      
     }
 
     &__bordered-2 {
@@ -654,23 +677,23 @@ $fw-black: 900;
         border-radius: 10px;
       }
     }
-
-    & td {
-      vertical-align: middle;
-      border: none;
-      min-width: 150px;
-      color: $text-black;
-      //font-size: 14px;
-      font-weight: 500;
+    .type-row {
+      height: 54px;
     }
-
-    & th {
-      vertical-align: middle;
-      border: none;
-      min-width: 110px;
-      color: $main-color--1;
-      //font-size: 14px;
-      font-weight: 500;
+    .properties-row {
+      height: 92px;
+      @media (min-width: 440px) {
+        height: 110px;
+      }
+      @media (min-width: 550px) {
+        height: 120px;
+      }
+      @media (min-width: 768px) {
+        height: 130px;
+      }
+      @media (min-width: 992px) {
+        height: 150px;
+      }
     }
 
     .es-articles__button {
