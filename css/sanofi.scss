@@ -815,6 +815,7 @@ $fw-black: 900;
         white-space: nowrap;
         color: $main-color--1;
         font-weight: $fw-bold;
+        margin: 0;
       }
 
       &--2 {
@@ -832,6 +833,16 @@ $fw-black: 900;
 
     ol {
       padding-left: 1rem;
+    }
+    &__logo-MAT {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 5px;
+    }
+    &__logo {
+      width: 30%;
+      max-width: 130px;
     }
   }
 }

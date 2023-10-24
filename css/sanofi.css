@@ -710,6 +710,7 @@
   white-space: nowrap;
   color: #005649;
   font-weight: 700;
+  margin: 0;
 }
 #es-rc #es-rc-content .es-footer__text--2 {
   font-weight: 700;
@@ -721,4 +722,14 @@
 }
 #es-rc #es-rc-content .es-footer ol {
   padding-left: 1rem;
+}
+#es-rc #es-rc-content .es-footer__logo-MAT {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 5px;
+}
+#es-rc #es-rc-content .es-footer__logo {
+  width: 30%;
+  max-width: 130px;
 }/*# sourceMappingURL=sanofi.css.map */
