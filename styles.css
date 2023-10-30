@@ -558,7 +558,7 @@ ol,p,ul{margin-top:0;margin-bottom:1rem}ol,p,ul{margin-bottom:1rem}img{vertical-
   border-radius: 10px;
 }
 #es-rc #es-rc-content .es-cross .header-row {
-  height: 80.3px;
+  height: 84px;
 }
 #es-rc #es-rc-content .es-cross .header-row td {
   vertical-align: top;
@@ -590,7 +590,7 @@ ol,p,ul{margin-top:0;margin-bottom:1rem}ol,p,ul{margin-bottom:1rem}img{vertical-
 }
 @media (min-width: 992px) {
   #es-rc #es-rc-content .es-cross .properties-row {
-    height: 150px;
+    height: 155px;
   }
 }
 #es-rc #es-rc-content .es-cross .es-articles__button {
